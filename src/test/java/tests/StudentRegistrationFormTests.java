@@ -1,6 +1,7 @@
 package tests;
 
 import com.github.javafaker.Faker;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -34,6 +35,7 @@ public class StudentRegistrationFormTests extends TestBase {
 
     @Test
     @Tag("Positive Test")
+    @Owner("Maksim D")
     public void openDemoQaSiteAndCheckForm() {
         step("Open students registration form", () -> open("https://demoqa.com/automation-practice-form"));
 
@@ -88,6 +90,7 @@ public class StudentRegistrationFormTests extends TestBase {
 
     @Test
     @Tag("Negative Test")
+    @Owner("Maksim D")
     public void openDemoQaSiteAndCheckFormNegative() {
         step("Open students registration form", () -> open("https://demoqa.com/automation-practice-form"));
 
