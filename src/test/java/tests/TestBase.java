@@ -21,6 +21,8 @@ public class TestBase {
         String remoteWebDriver = System.getProperty("remote.web.driver");
         if (remoteWebDriver != null)
             Configuration.remote = remoteWebDriver;
+        //        gradle clean test -Dweb.browser=opera
+        Configuration.browser = System.getProperty("web.browser", "chrome");
     }
 
     @AfterEach
