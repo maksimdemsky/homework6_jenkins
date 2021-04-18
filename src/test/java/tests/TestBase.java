@@ -40,6 +40,5 @@ public class TestBase {
         if (System.getProperty("video.storage") != null)
             attachVideo();
         closeWebDriver();
-        closeWebDriver();
     }
 }
