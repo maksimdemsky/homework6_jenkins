@@ -2,6 +2,7 @@ package tests;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -32,6 +33,7 @@ public class StudentRegistrationFormTests extends TestBase {
             subject = "Physics";
 
     @Test
+    @Tag("Positive Test")
     public void openDemoQaSiteAndCheckForm() {
         step("Open students registration form", () -> open("https://demoqa.com/automation-practice-form"));
 
@@ -85,6 +87,7 @@ public class StudentRegistrationFormTests extends TestBase {
     }
 
     @Test
+    @Tag("Negative Test")
     public void openDemoQaSiteAndCheckFormNegative() {
         step("Open students registration form", () -> open("https://demoqa.com/automation-practice-form"));
 
