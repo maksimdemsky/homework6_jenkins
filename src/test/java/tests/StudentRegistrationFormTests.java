@@ -85,7 +85,6 @@ public class StudentRegistrationFormTests extends TestBase {
     }
 
     @Test
-    @Disabled
     public void openDemoQaSiteAndCheckFormNegative() {
         step("Open students registration form", () -> open("https://demoqa.com/automation-practice-form"));
 
